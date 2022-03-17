@@ -1,0 +1,20 @@
+.breadCrumbs {
+    display: flex;
+    align-items: center;
+    .icon {
+        height: 16px;
+        width: 16px;
+        fill: #6d6d7a;
+        cursor: pointer;
+    }
+    span {
+        height: 20px;
+        width: 72px;
+        color: #6d6d7a;
+        font-size: 13px;
+        letter-spacing: 0;
+        line-height: 20px;
+        margin-left: 6px;
+        cursor: pointer;
+    }
+}

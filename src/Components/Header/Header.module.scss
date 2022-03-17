@@ -1,0 +1,28 @@
+.header {
+    height: 40px;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+    padding-top: 16px;
+    padding-bottom: 20px;
+    .input {
+        height: 40px;
+        width: 364px;
+        border-radius: 20px;
+        background-color: #f5f5f6;
+        margin-left: 40px;
+        border: none;
+        outline: none;
+        color: #a7a6ae;
+        size: 14px;
+        letter-spacing: 0;
+        line-height: 16px;
+        padding-left: 40px;
+    }
+    .icon {
+        position: absolute;
+        top: 29px;
+        left: 55px;
+        fill: #a7a6ae;
+    }
+}

@@ -1,0 +1,81 @@
+.author {
+    @mixin role-type {
+        padding: 1px 7px 3px;
+        border-radius: 2px;
+        height: 14px;
+        width: 35px;
+        color: #ffffff;
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 0;
+        line-height: 13px;
+    }
+
+    top: 0;
+    position: sticky;
+    width: 346px;
+    z-index: 9999;
+    background: #eeeeef;
+    .authorInfo {
+        display: flex;
+        .img {
+            height: 48px;
+            width: 48px;
+            border-radius: 12px;
+            image-rendering: -webkit-optimize-contrast;
+        }
+        .personInfo {
+            margin-left: 15px;
+            margin-bottom: 12px;
+            .admin {
+                @include role-type;
+                background-color: #ed6881;
+            }
+            .member {
+                @include role-type;
+                background-color: #dfdfe3;
+                color: #6d6d7a;
+            }
+        }
+        .name {
+            color: #2f2e41;
+            font-size: 18px;
+            font-weight: bold;
+            letter-spacing: 0;
+            line-height: 24px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            width: 170px;
+            white-space: nowrap;
+        }
+    }
+
+    button {
+        width: 100%;
+        height: 44px;
+        border: none;
+        outline: none;
+        display: flex;
+        cursor: pointer;
+        color: #888896;
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: 12px;
+        border-radius: 4px;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffffff;
+        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+        .plusIcon {
+            width: 22px;
+            height: 22px;
+            color: #888896;
+        }
+        &:disabled {
+            background: #dddddd;
+        }
+    }
+}
+.adminBg {
+    background: #ebeffa;
+}

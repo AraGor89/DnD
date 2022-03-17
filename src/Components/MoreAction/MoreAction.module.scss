@@ -1,0 +1,53 @@
+.container {
+    position: relative;
+    &:hover {
+        .tooltipText {
+            visibility: visible;
+        }
+    }
+    .tooltipText {
+        visibility: hidden;
+        position: absolute;
+        top: -29px;
+        left: -13; //49px;
+        background: black;
+        color: white;
+        width: 110px;
+        text-align: center;
+        padding: 4px 0px;
+        border-radius: 5px;
+        font-size: 12px;
+        z-index: 99999;
+        box-shadow: 0 0 3px rgba(56, 54, 54, 0.86);
+        transition: all 0.3s ease-in-out;
+    }
+    .moreIcon {
+        color: #a7a6ae;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        right: -113px;
+        top: 0px;
+        cursor: pointer;
+        &:hover {
+            background-color: lightgray;
+            border-radius: 3px;
+        }
+    }
+    .deckType {
+        color: #ffffff;
+    }
+    .actions {
+        position: absolute;
+        margin: 0px;
+        transform: translate3d(-17px, 24.4px, 0px);
+        width: 115px;
+        background: white;
+        text-align: center;
+        border-radius: 6px;
+        font-size: 12px;
+        font-weight: 500;
+        padding: 6px 0px;
+        cursor: pointer;
+    }
+}
